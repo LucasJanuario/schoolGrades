@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+    <title>School Grades</title>
+  </head>
+  <header>
+    <i id="mode_icon" class="fa-solid fa-moon"></i>
+    <h1 id="titulo">Calcule por aqui suas medias!</h1>
+  </header>
+  <body id="tudo">
+    <div id="img1" class="img-1">
+      <img src="./assets/image-one-light.svg" alt="senhor dark" srcset="" />
+    </div>
+    <div class="formulario" id="conteudo">
+      <input
+        autocomplete="off"
+        class="form1"
+        id="form1"
+        max="3"
+        type="text"
+        id="numero1"
+        placeholder="Digite sua nota numero 1 aqui:"
+      />
+      <input
+        autocomplete="off"
+        class="form2"
+        id="form2"
+        max="3"
+        type="text"
+        id="numero2"
+        placeholder="Digite sua nota numero 2 aqui:"
+      />
+      <input
+        autocomplete="off"
+        class="form3"
+        id="form3"
+        max="3"
+        type="text"
+        id="numero3"
+        placeholder="Digite sua nota numero 3 aqui:"
+      />
+      <span id="result"></span>
+
+      <!-- botton -->
+
+      <div>
+        <button
+          type="button"
+          id="button"
+          class="calcular"
+          value="enviar"
+          onclick="enviar()"
+        >
+          Calcular
+        </button>
+
+        <button
+          type="button"
+          id="button2"
+          class="reset"
+          value="reset"
+          onclick="reset()"
+        >
+          Resetar
+        </button>
+      </div>
+    </div>
+    <div id="img2" class="img-2">
+    <img
+      
+      src="./assets/image-two-light.svg"
+      alt="senhor dark"
+      srcset=""
+    />
+  </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
